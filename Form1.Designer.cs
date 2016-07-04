@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.flpAuthorization = new System.Windows.Forms.FlowLayoutPanel();
-            this.tbPassword = new System.Windows.Forms.TextBox();
             this.tbLoggin = new System.Windows.Forms.TextBox();
+            this.tbPassword = new System.Windows.Forms.TextBox();
             this.bAuthorization = new System.Windows.Forms.Button();
             this.bRegistration = new System.Windows.Forms.Button();
             this.tbMessages = new System.Windows.Forms.TextBox();
@@ -52,14 +52,6 @@
             this.flpAuthorization.Size = new System.Drawing.Size(405, 73);
             this.flpAuthorization.TabIndex = 0;
             // 
-            // tbPassword
-            // 
-            this.tbPassword.Location = new System.Drawing.Point(201, 3);
-            this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(192, 20);
-            this.tbPassword.TabIndex = 0;
-            this.tbPassword.Text = "Пароль";
-            // 
             // tbLoggin
             // 
             this.tbLoggin.Location = new System.Drawing.Point(3, 3);
@@ -67,6 +59,14 @@
             this.tbLoggin.Size = new System.Drawing.Size(192, 20);
             this.tbLoggin.TabIndex = 1;
             this.tbLoggin.Text = "Логин";
+            // 
+            // tbPassword
+            // 
+            this.tbPassword.Location = new System.Drawing.Point(201, 3);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.Size = new System.Drawing.Size(192, 20);
+            this.tbPassword.TabIndex = 0;
+            this.tbPassword.Text = "Пароль";
             // 
             // bAuthorization
             // 
@@ -76,6 +76,7 @@
             this.bAuthorization.TabIndex = 2;
             this.bAuthorization.Text = "Авторизация";
             this.bAuthorization.UseVisualStyleBackColor = true;
+            this.bAuthorization.Click += new System.EventHandler(this.bAuthorization_Click);
             // 
             // bRegistration
             // 

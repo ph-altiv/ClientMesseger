@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClientMesseger.Classes;
 
 namespace ClientMesseger
 {
@@ -15,6 +16,11 @@ namespace ClientMesseger
         public fMainWindow()
         {
             InitializeComponent();
+        }
+
+        private void bAuthorization_Click(object sender, EventArgs e)
+        {
+            Client client = new Client("127.0.0.1", 6487);
         }
     }
 }
